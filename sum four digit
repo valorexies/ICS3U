@@ -1,0 +1,13 @@
+integer = int(input("Please enter a 4 digit positive integer value: "))
+integer = float(integer)
+
+digit_1 = integer // 1000
+remainder_1 = integer // 10000
+remainder_1 = float(remainder_1)
+remainder_2 = integer % 100
+remainder_2 = float(remainder_2)
+remainder_3 = integer % 10
+remainder_3 = float(remainder_3)
+
+
+print("The digits of", integer, "are ", digit_1, ", ",  remainder_1, ", ", remainder_2, ", ", remainder_3)
