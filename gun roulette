@@ -1,4 +1,4 @@
 #valorant gun roulette
 
-guns = ["classic", "shorty", "frenzy", "ghost", "sherrif", "stinger, "spectre", "bucky", "judge", "bulldog", "guardian", "phantom", "vandal", "marshal", "operator", "ares", "odin"]
+guns = ["classic", "shorty", "frenzy", "ghost", "sherrif", "stinger", "spectre", "bucky", "judge", "bulldog", "guardian", "phantom", "vandal", "marshal", "operator", "ares", "odin"]
 print(secrets.choice(guns))
