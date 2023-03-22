@@ -1,0 +1,19 @@
+#Alexia Lee 
+#ICS3U1 Unit 7 Part 3 Q3
+#03-22-2023
+
+#3.a)
+#input - get integer from user and create list
+num = int(input("Enter a positive integer: "))
+numbers = []
+
+#process - seperate each integer and put them in a list
+while num >= 1:
+    digit = num % 10
+    num = num//10
+    digits = [digit]
+    numbers.extend(digits)
+
+#output - count the sevens and print out how many there are
+y = numbers.count(7)
+print("There are",y, "number of sevens in your integer")
