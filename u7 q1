@@ -1,0 +1,9 @@
+password = float(input("Create your password for user 1:"))
+
+login = float(input("Input your password for user 1: "))
+
+while (login != password):
+    wrong = input("Wrong password, please try again: ")
+
+if (login == password):
+  print("Access granted")
