@@ -1,9 +1,14 @@
-password = float(input("Create your password for user 1:"))
+pass_1 = float(input("Create your password for user 1:"))
 
+pass_2 = float(input("Create your password for user2: ))
+passwords = [pass_1, pass_2]
 login = float(input("Input your password for user 1: "))
 
-while (login != password):
+while (login != passwords):
     wrong = input("Wrong password, please try again: ")
 
-if (login == password):
-  print("Access granted")
+if (login == pass_1):
+  print("Access granted, Welcome Back user1")
+
+elif (login == pass_2):
+     print ("Access granted, Welcome Back user2)
