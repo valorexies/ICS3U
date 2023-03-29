@@ -1,17 +1,28 @@
-pass_1 = float(input("Create your password for user 1:"))
+user_1 = float(input("Create your username for user1:))
+pass_1 = float(input("Create your password for user1:"))
 
+user_1 = float(input("Create your username for user2:))
 pass_2 = float(input("Create your password for user2: ))
-passwords = [pass_1, pass_2]
+
+attempt = 0
+
 login = float(input("Input your password for user 1: "))
 
-while (login != passwords):
-    wrong = input("Wrong password, please try again: ")
+while (attempt < 5):
+    if (login == pass_1):
+        print("Access granted, Welcome Back user1")
+    elif (login != pass_1):
+        input("Wrong password, please try again: ")
+        attempt = attempt + 1
 
-if (login == pass_1):
-  print("Access granted, Welcome Back user1")
+login_2 = float(input("Input your password for user2: "))
 
-elif (login == pass_2):
-     print ("Access granted, Welcome Back user2)
-
-else:
-     
+while (attempt < 5):
+    if (login == pass_2):
+        print("Access granted, Welcome Back user2")
+    elif (login != pass_2):
+        input("Wrong password, please try again: ")
+        attempt = attempt + 1
+    
+if (attempt > 5):
+    print("Your chances have been used up, you're now locked out of your account")
