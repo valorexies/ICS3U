@@ -1,0 +1,13 @@
+#Alexia Lee
+#ICS3U1 Unit 7 Part 3 Q3b
+#03-22-2023
+
+#3.b)
+#input - get integer from user and create list
+num = int(input("Enter a positive integer: "))
+
+#process - seperate each integer and put them in a list
+while num >= 1:
+    digit = num % 10
+    num = num//10
+    print (digit)
