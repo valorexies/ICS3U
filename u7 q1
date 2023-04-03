@@ -1,6 +1,8 @@
 #Alexia Lee
-#ICS
+#ICS3U1 Unit 7 Question 1
+#02/04/23
 
+#Input - create your username and password then input it
 user_1 = input("Create your username for user1: ")
 pass_1 = input("Create your password for user1: ")
 
@@ -8,6 +10,7 @@ user_2 = input("Create your username for user2: ")
 pass_2 = input("Create your password for user2: ")
 attempt = 1
 
+#process - code determines if your username and password match
 while (attempt < 5):
     login_u = input("Input your username: ")
     login_p = input("Input your password: ")
