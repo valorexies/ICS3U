@@ -8,20 +8,22 @@ pass_1 = input("Create your password for user1: ")
 
 user_2 = input("Create your username for user2: ")
 pass_2 = input("Create your password for user2: ")
-attempt = 1
+attempt = 0
 
-#process - code determines if your username and password match
+#process + output - code determines if your username and password match and then outputs if correct
 while (attempt < 5):
     login_u = input("Input your username: ")
     login_p = input("Input your password: ")
 
     if (login_u == user_1) and (login_p == pass_1):
         print("Access granted, Welcome Back", user_1)
+        break
     elif (login_u == user_2) and (login_p == pass_2):
         print("Access granted, Welcome Back", user_2)
+        break
     else:
         attempt = attempt + 1
-        print("Wrong password, please try again: ")
+        print("Wrong password, please try again")
 
 if (attempt == 5):
     print("Your chances have been used up, you're now locked out of your account")
