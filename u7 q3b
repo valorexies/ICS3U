@@ -5,18 +5,22 @@
 #3.b)
 #input - get integer from user and create list
 num = int(input("Enter a positive integer: "))
-even = [ ]
-odd = [ ]
+numbers = []
+even = 0
+odd = 0
 
 #process - get the digits of the integer and determine if it's even or odd
 while num >= 1:
     digit = num % 10
     num = num//10
+    digits = [digit]
+    numbers.extend(digits)
 
-while digit > 0:
-    if (digit % 2 == 0):
-        even.append(digit)
+for x in numbers:
+    if (x % 2 == 0):
+        even += 1
     else:
-        odd.append(digit)
+        odd += 1
 
-print(even)
+print("There are", even, "even numbers in this integer")
+print("There are", odd, "odd numbers in this integer")
