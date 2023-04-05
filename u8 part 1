@@ -28,11 +28,12 @@ print("Your final price is $", final)
 #3
 import random
 #input - user inputs their name
-name = str(input("Input your name")
+name = str(input("Input your name: "))
 
 #process - determine the two letters and if they're the same
 letter1 = random.choice(name)
 letter2 = random.choice(name)
+print("The random letters chosen are", letter1, "and", letter2)
 
 #output - determine if they're the same letter
 if letter1 == letter2:
@@ -41,42 +42,46 @@ else:
   print(letter1, "and", letter2, "are not the same letter")
 
 #4
-import random 
+import random
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "X", "y", "z"]
 
+#process + output - alphabet is randomly generated and it is determined whether or not they're both vowels
 a1 = random.choice(alphabet)
 a2 = random.choice(alphabet)
 a3 = random.choice(alphabet)
 
-if a1 == "A"
-  if a2 == "A"
+if a1 == "A":
+  if a2 == "A":
     print(a1, "and", a2, "are the same vowel, A")
-  elif a3 == "A"
+  elif a3 == "A":
     print(a1, "and", a2, "are the same vowel, A")
 
-elif a1 == "E"
-  if a2 == "E"
+elif a1 == "E":
+  if a2 == "E":
     print(a1, "and", a2, "are the same vowel, E")
-  elif a3 == "E"
+  elif a3 == "E":
     print(a1, "and", a2, "are the same vowel, E")
 
-elif a1 == "I"
-  if a2 == "I"
+elif a1 == "I":
+  if a2 == "I":
     print(a1, "and", a2, "are the same vowel, I")
-  elif a3 == "I"
+  elif a3 == "I":
     print(a1, "and", a2, "are the same vowel, I")
 
-elif a1 == "O"
-  if a2 == "O"
+elif a1 == "O":
+  if a2 == "O":
     print(a1, "and", a2, "are the same vowel, O")
-  elif a3 == "O"
+  elif a3 == "O":
     print(a1, "and", a2, "are the same vowel, O")
 
-elif a1 == "U"
-  if a2 == "U"
+elif a1 == "U":
+  if a2 == "U":
     print(a1, "and", a2, "are the same vowel, U")
-  elif a3 == "U"
+  elif a3 == "U":
     print(a1, "and", a2, "are the same vowel, U")
 
-if a1==a2==a3:
+elif a1==a2==a3:
   print("All three letters are the same vowel")
+
+else:
+    print("The letters generated", a1, a2,"and", a3, "do not have two of the same vowel")
