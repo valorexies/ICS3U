@@ -50,33 +50,33 @@ a3 = random.choice(alphabet)
 
 if a1 == "A"
   if a2 == "A"
-    print(a1, "and", a2, "are the same vowel")
-  if a3 == "A"
-    print(a1, "and", a2, "are the same vowel")
+    print(a1, "and", a2, "are the same vowel, A")
+  elif a3 == "A"
+    print(a1, "and", a2, "are the same vowel, A")
 
 elif a1 == "E"
   if a2 == "E"
-    print(a1, "and", a2, "are the same vowel")
+    print(a1, "and", a2, "are the same vowel, E")
   elif a3 == "E"
-    print(a1, "and", a2, "are the same vowel")
+    print(a1, "and", a2, "are the same vowel, E")
 
 elif a1 == "I"
   if a2 == "I"
-    print(a1, "and", a2, "are the same vowel")
+    print(a1, "and", a2, "are the same vowel, I")
   elif a3 == "I"
-    print(a1, "and", a2, "are the same vowel")
+    print(a1, "and", a2, "are the same vowel, I")
 
-if a1 == "O"
+elif a1 == "O"
   if a2 == "O"
-    print(a1, "and", a2, "are the same vowel")
-  if a3 == "O"
-    print(a1, "and", a2, "are the same vowel")
+    print(a1, "and", a2, "are the same vowel, O")
+  elif a3 == "O"
+    print(a1, "and", a2, "are the same vowel, O")
 
-if a1 == "U"
+elif a1 == "U"
   if a2 == "U"
-    print(a1, "and", a2, "are the same vowel")
-  if a3 == "U"
-    print(a1, "and", a2, "are the same vowel")
+    print(a1, "and", a2, "are the same vowel, U")
+  elif a3 == "U"
+    print(a1, "and", a2, "are the same vowel, U")
 
-
-
+if a1==a2==a3:
+  print("All three letters are the same vowel")
