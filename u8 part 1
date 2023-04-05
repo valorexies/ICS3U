@@ -30,7 +30,7 @@ import random
 #input - user inputs their name
 name = str(input("Input your name")
 
-#process - determine the two vowels and if they're the same
+#process - determine the two letters and if they're the same
 letter1 = random.choice(name)
 letter2 = random.choice(name)
 
@@ -48,9 +48,35 @@ a1 = random.choice(alphabet)
 a2 = random.choice(alphabet)
 a3 = random.choice(alphabet)
 
-if a1==a2:
-  print(a1, "and", a2, "are the same letter")
-elif a2==a3:
-  print(a2, "and", a3, "are the same letter")
-else:
-  print(a1, "and", a3, "are the same letter")
+if a1 == "A"
+  if a2 == "A"
+    print(a1, "and", a2, "are the same vowel")
+  if a3 == "A"
+    print(a1, "and", a2, "are the same vowel")
+
+if a1 == "E"
+  if a2 == "E"
+    print(a1, "and", a2, "are the same vowel")
+  if a3 == "E"
+    print(a1, "and", a2, "are the same vowel")
+
+if a1 == "I"
+  if a2 == "I"
+    print(a1, "and", a2, "are the same vowel")
+  if a3 == "I"
+    print(a1, "and", a2, "are the same vowel")
+
+if a1 == "O"
+  if a2 == "O"
+    print(a1, "and", a2, "are the same vowel")
+  if a3 == "O"
+    print(a1, "and", a2, "are the same vowel")
+
+if a1 == "U"
+  if a2 == "U"
+    print(a1, "and", a2, "are the same vowel")
+  if a3 == "U"
+    print(a1, "and", a2, "are the same vowel")
+
+
+
