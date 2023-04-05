@@ -27,4 +27,19 @@ print("Your final price is $", final)
 
 #3
 import random
-#
+#input - user inputs their name
+name = str(input("Input your name")
+
+#process - determine the two vowels and if they're the same
+letter1 = random.choice(name)
+letter2 = random.choice(name)
+
+#output - determine if they're the same letter
+if letter1 == letter2:
+  print("They are the same letter")
+else:
+  print(letter1, "and", letter2, "are not the same letter")
+
+#4
+
+
