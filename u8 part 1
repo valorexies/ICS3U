@@ -1,0 +1,30 @@
+#Alexia Lee
+#ICS3U1 Unit 8 Part 1
+#04-05-23
+
+#1
+import random
+whole = random.randrange(5, 15)
+float = random.random()
+
+#output - add together the float and the whole number
+number = whole + float
+print(number)
+
+#2
+import random
+#input - user inputs their item's price
+price = int(input("Input your price here: $"))
+
+#process - generate a random tax rate
+tax = random.randint(10, 20)
+total = price*tax
+tax_t = total/100
+final = price + tax_t
+
+#output - outputs the final total price
+print("Your final price is $", final)
+
+#3
+import random
+#
