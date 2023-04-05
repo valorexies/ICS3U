@@ -1,0 +1,44 @@
+#Alexia Lee
+#ICS3U1 Unit 8 Part 2
+#04-05-23
+
+#process - get the random number of heads or tails
+import random
+heads = 0
+tails = 0
+max_h = 0
+max_t = 0
+chance = []
+
+#determine how many heads and tails get rolled
+for x in range (20):
+    coin = random.randint(0, 1)
+    chance.append(coin)
+    if coin == 0:
+        heads += 1
+    else:
+        tails += 1
+
+
+#output - print out the count of heads and tails (a)
+print(heads, "heads")
+print(tails, "tails")
+
+#determine the longest consecutive sequence (b)
+if heads > max_h:
+    max_h = heads
+    tails = 0
+
+else:
+    max_t = tails
+    heads = 0
+
+#output - output the longest consecutive sequqnece rolled (b)
+if max_t > max_h:
+    print("The longest consecutive sequence of tosses is tails")
+
+elif max_t < max_h:
+    print("The longest consecutive sequence of tosses is head")
+else:
+    if max_t == max_h:
+        print("They have an equal consecutive sequence")
