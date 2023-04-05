@@ -54,16 +54,16 @@ if a1 == "A"
   if a3 == "A"
     print(a1, "and", a2, "are the same vowel")
 
-if a1 == "E"
+elif a1 == "E"
   if a2 == "E"
     print(a1, "and", a2, "are the same vowel")
-  if a3 == "E"
+  elif a3 == "E"
     print(a1, "and", a2, "are the same vowel")
 
-if a1 == "I"
+elif a1 == "I"
   if a2 == "I"
     print(a1, "and", a2, "are the same vowel")
-  if a3 == "I"
+  elif a3 == "I"
     print(a1, "and", a2, "are the same vowel")
 
 if a1 == "O"
