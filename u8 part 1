@@ -47,3 +47,6 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"
 a1 = random.choice(alphabet)
 a2 = random.choice(alphabet)
 a3 = random.choice(alphabet)
+
+if a1==a2:
+  print(a1, "and", are the same 
