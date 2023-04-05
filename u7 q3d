@@ -1,0 +1,30 @@
+#Alexia Lee
+#ICS3U1 Unit 7 Question 3d
+#04-05-23
+
+#input - input the integer
+num = int(input("Enter a positive integer: "))
+n = []
+count = 0
+
+#process - seperate the digits in the integer
+while num >= 1:
+    digit = num % 10
+    num = num//10
+    n.append(digit)
+
+#process - determine if the there are 3 consecutive digits in ascending order:
+length = len(n)
+while length > 3:
+    length = len(n)
+    if n[1] == n[0]-1 and n[2] == n[1]-1:
+        print(n[2], n[1], "and", n[0], "are 3 consecutive digits in ascending order(in the integer given)")
+        break
+    else:
+        n.pop(0)
+
+#output - output if there are 3 consecutive digits or not
+length = len(n)
+
+if length < 3:
+    print("There are no 3 digits in consecutive ascending order")
