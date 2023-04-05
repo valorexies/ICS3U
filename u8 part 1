@@ -44,3 +44,6 @@ else:
 import random 
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "X", "y", "z"]
 
+a1 = random.choice(alphabet)
+a2 = random.choice(alphabet)
+a3 = random.choice(alphabet)
