@@ -1,0 +1,14 @@
+#Alexia Lee
+#ICS3U1 Unit 9
+#04-06-23
+
+n = int(input("Enter number: "))
+while n != 0:
+    n = int(input("Enter number: "))
+
+if n.isdigit():
+    for x in range (n):
+        n1 = n-1
+        n1 = n
+
+print(n)
