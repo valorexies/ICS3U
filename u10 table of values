@@ -1,0 +1,9 @@
+#Alexia Lee
+#ICS3U1 Unit 10 Table of Values
+#04-20-2023
+
+for x in range (5):
+    x = int(input("Input an integer for the equation f(x) = 2x+5: "))
+    f = (2*x) + 5
+
+print(x)
