@@ -1,0 +1,13 @@
+#Alexia Lee
+#ICS3U1 Unit 10 Animal Food SUpply
+#04-20-2023
+
+food = 0
+hour = 1
+animals = 10
+
+while food < 1000:
+    animals = animals*2
+    food = food + 4000
+    hour += 1
+    print("Hour:", hour, "Population:", animals, "Population Limit:", food)
