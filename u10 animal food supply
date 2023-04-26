@@ -1,12 +1,12 @@
 #Alexia Lee
-#ICS3U1 Unit 10 Animal Food SUpply
+#ICS3U1 Unit 10 Animal Food Supply
 #04-20-2023
 
-food = 0
-hour = 1
+food = 1000
+hour = 0
 animals = 10
 
-while food < 1000:
+while food > animals:
     animals = animals*2
     food = food + 4000
     hour += 1
