@@ -2,8 +2,17 @@
 #ICS3U1 Unit 10 Table of Values
 #04-20-2023
 
+value_x = []
+value_f = []
 for x in range (5):
     x = int(input("Input an integer for the equation f(x) = 2x+5: "))
     f = (2*x) + 5
+    value_x.append(x)
+    value_f.append(f)
 
-print(x)
+print("x =", value_x)
+
+for x in range(5):
+    print("x = ", value_x[0], ", 2x+5 = ", value_f[0])
+    del value_x[0]
+    del value_f[0]
