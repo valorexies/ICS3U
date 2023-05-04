@@ -2,4 +2,21 @@
 #ICS3U1 Unit 11
 #04-26-2023
 
-value = int(input("Input any numbers you want"))
+#input - input any number of numbers the user wants and put them in a list
+print("Input any numbers you want, to stop input 'stop'")
+numbers = []
+
+#process - determine if numbers are integers using try and except
+while True:
+    integer = input("")
+    try:
+        integer = int(integer)
+    except ValueError:
+        print("Invalid input, please input an integer or 'stop'")
+        continue
+    if integer != 'stop':
+        numbers.append(integer)
+    else:
+        break
+
+print(*numbers)
