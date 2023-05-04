@@ -9,14 +9,27 @@ numbers = []
 #process - determine if numbers are integers using try and except
 while True:
     integer = input("")
+    if integer == 'stop':
+        break
+    else:
+        numbers.append(integer)
     try:
         integer = int(integer)
     except ValueError:
         print("Invalid input, please input an integer or 'stop'")
+        numbers.remove(integer)
         continue
-    if integer != 'stop':
-        numbers.append(integer)
-    else:
-        break
 
 print(*numbers)
+
+#determine if list is in order from lowest to highest
+count = 0
+
+while 0 < len(numbers):
+    if numbers[1] > numbers[0]:
+        print("The list is in order")
+        break
+    else:
+        numbers.pop(0)
+        print("List is not in order")
+        break
