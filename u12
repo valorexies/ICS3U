@@ -1,1 +1,37 @@
+#Alexia Lee
+#ICS3U1 Unit 12
+#05/10/23
 
+#input 10 integers from user using a loop
+print("Please enter 10 integers below")
+integers = []
+
+for x in range(10):
+    ten = int(input(""))
+    integers.append(ten)
+
+#1. find the sum of the integers
+sum = sum(integers)
+print("The sum of all the integers in the list is", sum)
+
+#2. find the average of the values
+average = sum/10
+print("The average of the values is", average)
+
+#3. find the highest and lowest values
+highest = max(integers)
+lowest = min(integers)
+
+print(highest, "is the highest value and", lowest, "is the lowest value")
+
+#4. find the number of odd and even values
+even = 0
+odd = 0
+
+for x in integers:
+    if (x % 2 == 0):
+        even += 1
+    else:
+        odd += 1
+
+print("There are", even, "even values and", odd, "odd values")
