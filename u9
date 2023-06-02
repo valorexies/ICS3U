@@ -2,16 +2,21 @@
 #ICS3U1 Unit 9
 #04-06-23
 
-
-while n != 0:
+#input - user inputs an integer and program determines if the input is greater than 0
+while True:
     try:
-        n = int(input("Enter number: "))
-        break
+        n = int(input("Enter positive integer: "))
+        if n <= 0:
+            print("Integer is greater than 0")
+        else:
+            break
     except ValueError:
         print("Please enter a valid integer.")
 
+#process - calculates the sum of first n integer
 sum = 0
 for i in range (1, n+1):
     sum += i
 
+#output - outputs the sum of the first n integers
 print("The sum of the first", n, "integers is", sum)
