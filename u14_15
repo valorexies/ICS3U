@@ -1,7 +1,7 @@
 #Name: Alexia Lee
 #Date: 06-01-2023
 #Course: ICS3U1 Unit 14/15
-#File Name: AlexiaLeeICS3U1Unit14_15.py
+#File Name: Alexia Lee ICS3U1 Unit14_15.py
 #Description: This program is for Unit 14/15 and loops a menu for three functions
 
 import math
@@ -12,7 +12,7 @@ def print_header():
     print("Name: Alexia Lee")
     print("Date: 06-01-2023")
     print("Course: ICS3U1 Unit 14/15")
-    print("File Name: AlexiaLeeICS3U1Unit14_15.py")
+    print("File Name: Alexia Lee ICS3U1 Unit14_15.py")
     print("Description: This program is for Unit 14/15 and loops a menu for three functions")
 
 #output - outputs the function
@@ -36,16 +36,20 @@ a = slope(x1, y1, x2, y2)
 print("The slope is", a)
 
 #3
-#calculates
 def fancysum(n):
     # process - calculates the sum of first n integer
     sum = 0
+    square = 0
     for i in range(1, n + 1):
         sum += i
-    return (sum)
+    #process - calculates the sum of squares of first n integers
+    for x in range(1, n + 1):
+        square += x*x
+    return (sum, square)
 
 n = int(input("Enter positive integer: "))
 
 total_sum = fancysum(n)
 
-print("The sum of the first", n, "integers is", total_sum)
+print("The sum and sum of squares of the first", n, "integers is", total_sum)
+
