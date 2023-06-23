@@ -1,0 +1,108 @@
+# Alexia Lee
+# ICS3U1
+# Unit 16/17 Culminating
+# 06-18-23
+# Word Guessing Game
+
+# Lists + count
+master_list = ["dolphin", "lobster", "pumpkin", "ostrich", "peacock", "apricot", "giraffe", "leopard", "hamster"]
+word = []
+letters = []
+
+count = 0
+games = 0
+guesses = 5
+
+# modules
+import random
+import math
+
+
+# Functions
+# Setup game main menu and getting the word to guess
+def get_option():
+    print("Welcome to the Word Guessing Game!")
+    print("Main Menu")
+    if games <= 0:
+        print("1. Play")
+    if games > 0:
+        print("1. Play Again")
+    print("2. Display Instructions")
+    print("3. Quit")
+
+    while True:
+        choice = input(": ")
+        if choice == "1" or choice == "Play" or choice == "Play Again":
+            print("Starting game!\n")
+            break
+        elif choice == "2" or choice == "Display Instructions":
+            print("1. You have 5 attempts to guess the word")
+            print("2. If you don't get the answer within those 5 guesses no worries you'll be able to play again!")
+            print("3. Have Fun!!\n")
+            continue
+        elif choice == "3" or choice == "Quit":
+            print("Bye! See you again :)")
+            quit()
+        else:
+            print("Please enter a valid option")
+            continue
+
+
+get_option()
+
+def get_word(master_list):
+    random.shuffle(master_list)
+    word = master_list[0]
+    letters = list(word)
+    return word
+
+result = get_word(master_list)
+
+# gives the letters in the word
+for x in result:
+    letters.append(x)
+    count += 1
+
+# game
+# letters - letters in word
+# letter - user guessed
+# guess - guess number 1, 2 ,3 etc
+print("Your word has", count, "letters\n")
+
+guessed = ["*"] * len(letters)
+print(guessed)
+already_guess = []
+
+while guesses > 0:
+    letter = input("Guess a letter: ")
+    guesses -= 1
+    games += 1
+
+    # identify if the letter guessed is in the letters and if so then replace the * with the letter
+    for index, element in enumerate(letters):
+        if element == letter:
+            guessed[index] = letter
+
+    if letter in already_guess:
+        print("You already guessed", letter)
+        guesses += 1
+    else:
+        already_guess.append(letter)
+
+    if letter in letters:
+        guesses += 1
+        print(guessed)
+    else:
+        print("Wrong guess. You have", guesses, "more guesses")
+        print(guessed)
+    if '*' in guessed:
+        continue
+    else:
+        print("Congratulations you won!!")
+        break
+
+if guesses == 0:
+    print("You ran out of guesses. Game over!\n")
+
+#go back to main menu
+get_option()
