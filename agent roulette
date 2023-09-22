@@ -1,6 +1,6 @@
 #valorant gun roulette
 
-guns = ["Brimstone", "Phoenix", "Sage", "Sova", "Viper", "Cypher", "Reyna", "Killjoy", "Breach", "Omen", "Jett", "Raze", "Skye", "Yoru", "Astra", "Kay/O", "Chamber", "Neon", "Fade", "Harbor"]
+guns = ["Brimstone", "Deadlock", "Gekko", "Phoenix", "Sage", "Sova", "Viper", "Cypher", "Reyna", "Killjoy", "Breach", "Omen", "Jett", "Raze", "Skye", "Yoru", "Astra", "Kay/O", "Chamber", "Neon", "Fade", "Harbor"]
 
 import random
 print(random.choices(guns))
